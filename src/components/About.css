@@ -1,0 +1,86 @@
+/* About Section */
+.about {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    min-height: 40vh; /* Minimum viewport height for centering */
+  }
+  
+  /* Remove the background color of the box */
+  .about-box {
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+  }
+  
+  /* Heading styles */
+  .about-box h2 {
+    font-size: 2.5rem;
+    color: #00aaff; /* Blue color for headings */
+    margin-bottom: 20px;
+    text-align:center;
+  }
+  
+  /* Paragraph styles - default for dark mode */
+  .about-box p {
+    font-size: 1.2rem;
+    color: #ffffff; /* White text for dark mode */
+    margin-bottom: 15px;
+    line-height: 1.6;
+    transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Light Theme - Change text to black */
+  .light-theme .about-box p {
+    color: #000000; /* Black text for light mode */
+  }
+  
+  /* Sun and Moon Toggle */
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .light-theme .icon {
+    color: #00aaff; /* Sun icon color in light theme */
+  }
+  
+  .dark-theme .icon {
+    color: #fff; /* Moon icon color in dark theme */
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .about-box {
+      text-align: center;
+    }
+  
+    .about {
+      padding: 30px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .theme-toggle {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  

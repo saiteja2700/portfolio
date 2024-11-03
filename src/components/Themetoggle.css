@@ -1,0 +1,21 @@
+/* src/components/ThemeToggle.css */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .light-theme .icon {
+    color: #00aaff;
+  }
+  
+  .dark-theme .icon {
+    color: #fff;
+  }
+  

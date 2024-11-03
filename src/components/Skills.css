@@ -1,0 +1,117 @@
+/* src/components/Skills.css */
+
+/* Theme Toggle */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  
+.icon {
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.light-theme .icon {
+    color: #00aaff; /* Sun icon color */
+}
+  
+.dark-theme .icon {
+    color: #fff; /* Moon icon color */
+}
+  
+/* Light Theme */
+.light-theme {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+  
+/* Dark Theme */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 1rem;
+}
+
+.skills-section p {
+    margin: 0.5rem 0 2rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+/* Skill Category */
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light-theme .skill-category h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.dark-theme .skill-category h3 {
+    font-size: 1.2rem;
+    color: #f3efef;
+}
+
+/* Skill Items */
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill-item svg {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Dark Theme Styling for Skill Items */
+.dark-theme .skill-item {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.light-theme .skill-item {
+    background-color: #f0f0f0;
+    color: #333;
+}

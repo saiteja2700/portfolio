@@ -1,0 +1,119 @@
+/* Flashcard Container */
+.flashcards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin-top: 70px;
+  }
+  
+  /* Theme Toggle */
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .light-theme .icon {
+    color: #00aaff; /* Sun icon color */
+  }
+  
+  .dark-theme .icon {
+    color: #fff; /* Moon icon color */
+  }
+  
+  /* Flashcard Styling */
+  .flashcard {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .flashcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    max-width: 250px; /* Set a maximum width for the image */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+  }
+  
+  /* Flashcard Title */
+  .flashcard h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+    text-align: left;
+  }
+  
+  /* Flashcard Paragraph */
+  .flashcard p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  /* Key Features & Outcome Headers */
+  .flashcard h4 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #00aaff;
+    text-align: left;
+  }
+  
+  /* Key Features List */
+  .flashcard ul {
+    padding-left: 20px;
+  }
+  
+  .flashcard ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: inherit;
+    text-align: left;
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Light Theme */
+  .light-theme {
+    background-color: #f5f5f5;
+    color: #000000;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .flashcards-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .flashcard h3, .flashcard p, .flashcard h4, .flashcard ul {
+      text-align: center; /* Center-align text on small screens */
+    }
+  
+    .theme-toggle {
+      top: 10px;
+      right: 10px;
+    }
+  }
+  

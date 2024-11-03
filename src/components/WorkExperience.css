@@ -1,0 +1,133 @@
+/* Dark and Light Themes */
+body.dark-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.light-theme {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Work Experience Section */
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  min-width: none;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.work-box {
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 800px;
+  text-align: left;
+  margin-top: 120px;
+}
+
+.work-box h2 {
+  font-size: 3rem;
+  color: #00aaff;
+  margin-bottom: 30px;
+}
+
+.work-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Update paragraph and list colors for both themes */
+.work-box p, .work-box ul {
+  color: inherit; /* Inherit text color based on theme */
+}
+
+.work-box ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.work-box ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.6; /* Line spacing for better readability */
+}
+
+/* Add spacing between experiences */
+.experience {
+  margin-bottom: 30px;
+}
+
+/* Animation for Work Experience Section */
+.work-box p, .work-box h3, .work-box ul {
+  opacity: 0;
+  animation: fadeInWork 1s forwards;
+}
+
+.work-box p:nth-child(2), .work-box h3:nth-child(1), .work-box ul:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.work-box p:nth-child(4), .work-box h3:nth-child(5), .work-box ul:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInWork {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sun and Moon Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.light-theme .icon {
+  color: #00aaff;
+}
+
+.dark-theme .icon {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .work-box {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+  }
+}
